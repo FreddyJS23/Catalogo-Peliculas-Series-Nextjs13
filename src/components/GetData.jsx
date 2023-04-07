@@ -1,6 +1,7 @@
 import axios from "axios";
 import styles from "../styles/data.module.css"
 import dataDesconocido from "../../public/svg/dataDesconocido.svg"
+import Image from "next/image";
 
 async function getData(tituloData, catalago) {
   let options = {
@@ -53,7 +54,8 @@ export default async function GetData({ tituloData, catalago }) {
   return (
     <div className={styles.data}>
       <div className={styles['data-portada']}>
-        <img src={primaryImage ? primaryImage.url : dataDesconocido} alt=""  />
+        <Image src={primaryImage ? primaryImage.url : dataDesconocido} alt="" width={352} height={400} />
+        
       <button>Ver trailer</button>
       </div>
 

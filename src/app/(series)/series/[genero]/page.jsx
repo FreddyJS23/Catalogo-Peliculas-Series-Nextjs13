@@ -1,4 +1,5 @@
 import GetAllDataPages from "@/components/GetDataPages";
+import NavigationDataPages from "@/components/NavigationDataPages";
 
 
 
