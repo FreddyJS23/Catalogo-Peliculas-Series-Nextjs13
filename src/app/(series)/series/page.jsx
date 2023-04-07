@@ -1,7 +1,7 @@
 import GetAllDataPages from "@/components/GetDataPages";
 import NavigationDataPages from "@/components/NavigationDataPages";
 
-export default function PageSeries(){
+export default function PageSeries({searchParams}){
     let page
     if(searchParams.page > 1){
         page=parseInt(searchParams.page) 
