@@ -1,0 +1,70 @@
+/* contedor principal */
+.data{
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+/* contenedor portada */
+.data-portada{
+
+}
+.data-portada img{
+width: 22rem;
+border-radius: 10px;
+}
+/* contenedor indormacion */
+.data-informacion{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+   
+}
+/* contenedor titulo */
+.data-informacion-titulo{
+    width: 70%;
+    display: flex;
+}
+
+.data-informacion-titulo p{
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+/* contenedor categoria */
+.data-informacion-categoria{
+    width: 5rem;
+    margin-top: -.5rem;
+}
+.data-informacion-categoria p{
+    font-size: 1rem;
+}
+
+/* contenedor descripcion */
+.data-informacion-descripcion{
+    width: 80%;
+    margin-bottom: 1rem;
+   
+}
+.data-informacion-descripcion p{
+font-size: 1rem;
+}
+
+/* contendor informacion extra */
+.data-informacion-extra{
+    width: 100%;
+    display: flex;
+gap: 10rem;    
+}
+
+/* contendor informacion extra datos */
+.data-informacion-extra-datos{
+
+}
+/* contendor informacion extra temporadas */
+.data-informacion-extra-temporadas{
+
+}

@@ -1,7 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   
   experimental: {
     appDir: true,
+    serverComponentsExternalPackages:["react-bootstrap"]
+  }, images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**m.media-amazon.com',
+      
+      },
+    ],
   },
 }
 

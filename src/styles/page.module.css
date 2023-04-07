@@ -1,0 +1,46 @@
+/* .section-home{
+
+} */
+
+.art-movies-top{
+    margin-left: 4rem;
+    margin-bottom:6rem;
+    position: relative;
+    display: flex;
+    
+}
+
+/* articlos */
+.art-movies-recent,
+.art-series-recent{
+    margin-bottom:3rem;
+    position: relative;
+    
+}
+.art-movies-recent h2,
+.art-series-recent h2{
+   margin-bottom: 1rem;
+    
+}
+
+/* iconos */
+.icono-destacadas{
+    background-image: url("../../public/svg/destacadas.svg");   
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 2;
+    top: -2rem;
+    left: -2rem;
+    transform: rotate(80deg);
+
+}
+.icono-destacadas2{
+    background-image: url("../../public/svg/palomitas.svg");
+position: absolute;
+width: 3rem;
+height: 3rem;
+margin-left: 0.5rem;
+    z-index: 2;
+    top: -0.7rem;
+}

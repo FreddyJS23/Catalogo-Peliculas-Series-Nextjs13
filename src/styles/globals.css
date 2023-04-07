@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Work+Sans&display=swap');
+
+:root{
+  --fondo:rgb(10,10,25);
+  --titleLinkFont:1.3rem;
+  --titleLinkFontSidebar:1.1rem;
+  --fondo-sidebar: rgb(15, 15, 30);
+  --color-principal:rgb(29,206,216)
+}
+
+body{
+  background-color: var(--fondo);
+ color: white;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Alkatra';
+ font-family: 'Work Sans', sans-serif;
+  
+}
+
+main{
+  color: white;
+  margin-left: 18rem;
+}
+
+.iconos{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+
+/* estilos fondo de la barra */
+::-webkit-scrollbar{
+  background: var(--fondo);
+  width:10px
+}
+/* estilos de la barra */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-principal);
+  border-radius:10px
+}
+
+/* estilos pista de la barra */
+::-webkit-scrollbar-track {
+ background-color: var(--fondo);
+  border-radius: 10px;
+}
+
+/* estilos de los botnes  */
+/* ::-webkit-scrollbar-button {
+  
+} */
+

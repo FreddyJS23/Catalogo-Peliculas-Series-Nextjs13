@@ -1,0 +1,24 @@
+.container-pageData{
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;
+    margin-left: 2rem;
+}
+
+.pageData-item{
+    width: 13rem;
+    height: 20rem;
+
+   
+}
+.pageData-item-img img{
+  width:  13rem;
+  height: 18rem;
+  border-radius: 22px;
+}
+
+.pageData-item-title {
+  text-align: center;
+  margin-top: -10px;
+}
