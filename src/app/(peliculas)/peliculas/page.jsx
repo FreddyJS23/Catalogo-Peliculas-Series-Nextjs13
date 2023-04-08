@@ -5,6 +5,13 @@ import { Suspense } from "react";
 
 export const dynamic = 'force-dynamic'
 
+export const metadata={
+    title:'Peliculas',
+    description: "informacion sobre peliculas de cualquier genero"
+}
+
+
+
 export default function PagePeliculas({searchParams}){
     let page
     if(searchParams.page > 1){

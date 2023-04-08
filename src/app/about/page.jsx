@@ -1,4 +1,7 @@
 import styles from "../../styles/about.module.css"
+export const metadata = {
+  title: 'About',
+};
 
 const page = () => {
   return (
