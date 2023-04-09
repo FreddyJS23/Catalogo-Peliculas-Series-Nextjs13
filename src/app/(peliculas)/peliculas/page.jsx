@@ -3,7 +3,7 @@ import LoaderPageData from "@/components/LoaderDataPage";
 import NavigationDataPages from "@/components/NavigationDataPages";
 import { Suspense } from "react";
 
-export const fetchCache = 'force-no-store'
+//export const fetchCache = 'force-no-store'
 
 export const metadata={
     title:'Peliculas',
