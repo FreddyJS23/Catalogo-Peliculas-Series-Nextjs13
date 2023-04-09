@@ -4,6 +4,7 @@ import NavigationDataPages from "@/components/NavigationDataPages"
 import { Suspense } from "react"
 
 
+
 const pageGeneroPelicula = ({params,searchParams}) => {
   let page
  
@@ -18,11 +19,11 @@ const pageGeneroPelicula = ({params,searchParams}) => {
   
   return (
    <>
-   <Suspense fallback={<LoaderPageData />}>
+   
 
    <GetDataPages page={page}  tipo={"movie"} genero={params.genero} year={"2023"}  />
 
-   </Suspense>
+
    
    <NavigationDataPages />
    </>

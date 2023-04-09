@@ -1,3 +1,4 @@
+'use client'
 import PageDataItem from "./PageDataItem";
 import styles from "../styles/pageData.module.css"
 const PageData = ({results,tipo}) => {

@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link"
 import styles from "../styles/pageData.module.css"
 import Image from "next/image"
@@ -18,7 +20,7 @@ tituloUrl=tituloUrl.replaceAll(" ", "-")
   }else if (tipo=="tvSeries"){
     url=`./serie/${tituloUrl}`
   }
-console.log(!img ? "null" : "no null")
+
   return (
    <>
     <div className={styles["pageData-item"]}>

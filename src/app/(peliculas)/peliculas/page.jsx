@@ -3,7 +3,7 @@ import LoaderPageData from "@/components/LoaderDataPage";
 import NavigationDataPages from "@/components/NavigationDataPages";
 import { Suspense } from "react";
 
-export const dynamic = 'force-dynamic'
+export const fetchCache = 'force-no-store'
 
 export const metadata={
     title:'Peliculas',
@@ -27,11 +27,9 @@ return(
          <>
        
     
-<Suspense fallback={<LoaderPageData/>}>
+
   
    <GetDataPages page={page}  tipo={"movie"} genero={"Action"} year={"2023"}  /> 
-
-</Suspense>
 
          <NavigationDataPages />
       

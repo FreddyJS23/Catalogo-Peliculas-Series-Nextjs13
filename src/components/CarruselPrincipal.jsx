@@ -28,7 +28,7 @@ export default function Carrusel({results}){
      
      <ListDataCarouselPrincipal
      
-       primaryImage={primaryImage ? primaryImage : initialPrimaryImage}
+       primaryImage={primaryImage ? primaryImage : null}
        releaseYear={releaseYear ? releaseYear : initialReleaseYear}
        genres={genres}
        titulo={titleText.text}

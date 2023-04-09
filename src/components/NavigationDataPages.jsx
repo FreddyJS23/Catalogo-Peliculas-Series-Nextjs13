@@ -11,7 +11,9 @@ const NavigationDataPages = () => {
   let page = parseInt(searchParams.get("page") ? searchParams.get("page") : 1);
 
   const handleClick = (e) => {
-    router.push(`${pathname}?page=${e.target.innerText}`);
+    //router.push(`${pathname}?page=${e.target.innerText}`);
+   
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -24,14 +26,23 @@ const NavigationDataPages = () => {
       </Link>
       <Link
         className={styles.button}
+        onClick={handleClick}
         href={{ pathname: `${pathname}`, query: { page: `${page + 1}` } }}
       >
         {page + 1}
       </Link>
-      <Link className={styles.button} href={`${pathname}?page=${page + 2}`}>
+      <Link
+        className={styles.button}
+        onClick={handleClick}
+        href={{ pathname: `${pathname}`, query: { page: `${page + 2}` } }}
+      >
         {page + 2}
       </Link>
-      <Link className={styles.button} href={`${pathname}?page=${page + 3}`}>
+      <Link
+        className={styles.button}
+       onClick={handleClick}
+        href={{ pathname: `${pathname}`, query: { page: `${page + 3}` } }}
+      >
         {page + 3}
       </Link>
     </div>
