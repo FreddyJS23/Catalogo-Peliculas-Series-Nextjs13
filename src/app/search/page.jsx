@@ -1,4 +1,5 @@
 import GetDataPages from "@/components/GetDataPages";
+import NavigationDataPages from "@/components/NavigationDataPages";
 
 
 export const metadata = {
