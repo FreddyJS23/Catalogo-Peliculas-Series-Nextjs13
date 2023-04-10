@@ -37,13 +37,19 @@ async function getDataPage(
   return data;
 }
 
-async function getDataSearch(tipo, search) {
+async function getDataSearch(tipo, search,page) {
+ 
+
+if(tipo== "series") tipo="tvSeries"
+if(tipo== "peliculas") tipo="movie"
+else tipo
+
 
 
   const options = {
     method: "GET",
     url: `https://moviesdatabase.p.rapidapi.com/titles/search/title/${search}`,
-    params: { exact: "false", limit: "20", titleType: tipo ? tipo : null, sort: "year.decr" },
+    params: { exact: "false", limit: "20", titleType: tipo ? tipo : null, sort: "year.decr", page: page, },
     headers: {
       "X-RapidAPI-Key": "e9914b2e24msh42f9a53e57e48d3p121109jsn41aef6923b54",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
@@ -57,7 +63,10 @@ async function getDataSearch(tipo, search) {
 
   let data = res.data;
 
+
   return data;
+
+
 }
 
 export default async function GetAllDatas({
@@ -75,11 +84,12 @@ export default async function GetAllDatas({
  
 
   let data=data1.results.concat(data2.results) */
+  
 
   let { results } = !search
     ? await getDataPage(page, tipo, genero, list, year, sort)
-    : await getDataSearch(tipo, search);
-
+    : await getDataSearch(tipo, search,page);
+    
   return (
     <>
       <PageData results={results} tipo={tipo} />

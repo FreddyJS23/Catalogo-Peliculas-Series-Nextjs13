@@ -9,16 +9,21 @@ const pageSearch = ({searchParams}) => {
 
  let search=searchParams
 
+ let page
+ if(searchParams.page > 1){
+     page=parseInt(searchParams.page) 
+     
+ }else{
+     page=1
+ }
+
     return (
     
           <>
        
   
-<h1>params</h1>
-  
-  <GetDataPages search={search.search} tipo={search.tipo ? search.tipo : null} />  
-
-        {/*  <NavigationDataPages /> */}
+  <GetDataPages page={page} search={search.search} tipo={search.tipo ? search.tipo : null} />   
+         <NavigationDataPages /> 
       
          
          </>

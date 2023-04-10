@@ -13,9 +13,16 @@ const SearchInput = () => {
 
     const handleClickSearch=()=>{
       
-      segmento=segmento.replace("/(\(|\))/g","")
+      segmento=segmento && segmento.replace(/(\(|\))/g,"")
+      let inputValue=inputSearch.current.value
+
+if( segmento == 'search') segmento = null  
+
+    let tipo=segmento ? `&tipo=${segmento}` : ''
       
-      router.push(`/search?search=${inputSearch} ${segmento &&  'tipo'+segmento}    `)
+      let link=`/search?search=${inputValue}${tipo}` 
+     
+     router.push(link)
     }
     
 

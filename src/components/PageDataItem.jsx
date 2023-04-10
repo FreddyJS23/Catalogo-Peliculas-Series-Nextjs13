@@ -18,6 +18,8 @@ tituloUrl=tituloUrl.replaceAll(" ", "-")
     url=`./pelicula/${tituloUrl}`
   }else if (tipo=="tvSeries"){
     url=`./serie/${tituloUrl}`
+  }else{
+    url=`./otro/${tituloUrl}`
   }
 
   return (
