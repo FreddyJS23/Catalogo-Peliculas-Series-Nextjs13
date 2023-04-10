@@ -1,7 +1,12 @@
+
 import Link from "next/link";
 import styles from "../styles/sidebar.module.css";
 import GetDataGenero from "./GetDataGenero";
+import SearchInput from "./SearchInput";
+
 const Sidebar = () => {
+  
+
   return (
     <>
       <div className={styles["container-sidebar"]}>
@@ -20,8 +25,9 @@ const Sidebar = () => {
               <Link href={"/about"}>Acerca</Link>
             </li>
             <li className={styles["sidebar-link"]}>
-            <span className={`${styles["icono-search"]} iconos`}></span>
-              <input type="text" />
+         
+            <SearchInput />
+            
             </li>
            <li className={styles['container-generos']}>
           

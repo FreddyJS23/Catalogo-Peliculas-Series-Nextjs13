@@ -85,6 +85,7 @@ overflow: hidden;
 }
 .icono-search{
     background-image: url("../../public/svg/search.svg");
+    cursor: pointer;
 }
 .icono-category{
     background-image: url("../../public/svg/category.svg");

@@ -28,7 +28,7 @@ export default function ListDataCarousel({
   return (
     <div className={styles["cp-item"]}>
       
-      <div className={styles["portada"]} style={{backgroundImage:`url(${primaryImage ?   primaryImage.url : ""})`}}></div>
+      <Image className={styles["portada"]} src={primaryImage ?   primaryImage.url : ""} width={960} height={368} ></Image>
       
       <div className={styles["cp-item-image"]}>
         <Link href={`${tipo}/${titulo}`}>
