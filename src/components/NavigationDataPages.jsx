@@ -11,9 +11,9 @@ const NavigationDataPages = () => {
   let page = parseInt(searchParams.get("page") ? searchParams.get("page") : 1);
 
   const handleClick = (e) => {
-    //router.push(`${pathname}?page=${e.target.innerText}`);
-   
     window.scrollTo({ top: 0, behavior: "smooth" });
+    router.push(`${pathname}?page=${e.target.innerText}`);
+   
   };
 
   return (

@@ -24,7 +24,7 @@ const pageSearch = ({searchParams}) => {
        
   
   <GetDataPages page={page} search={search.search} tipo={search.tipo ? search.tipo : null} />   
-         <NavigationDataPages /> 
+         <NavigationDataPages  /> 
       
          
          </>

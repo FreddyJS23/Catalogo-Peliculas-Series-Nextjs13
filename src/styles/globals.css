@@ -10,7 +10,7 @@
 }
 
 body{
-  background-color: var(--fondo);
+  background-color: var(--fondo) !important;
  color: white;
  padding: 0;
  margin: 0;

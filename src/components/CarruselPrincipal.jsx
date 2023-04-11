@@ -17,7 +17,7 @@ export default function Carrusel({results}){
 
 
 <div className={styles['carruselPrincipal-container']}>
-<Carousel interval={3000} indicators={false}  prevIcon={<div style={{display:"none"}}/>}>
+<Carousel interval={5000} indicators={true}  controls={false}>
      
       
 
