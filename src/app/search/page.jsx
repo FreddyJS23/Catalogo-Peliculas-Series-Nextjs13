@@ -1,7 +1,7 @@
 import GetDataPages from "@/components/GetDataPages";
 import NavigationDataPages from "@/components/NavigationDataPages";
 
-
+export const dynamic = 'force-dynamic'
 export const metadata = {
     title: 'About',
   };
