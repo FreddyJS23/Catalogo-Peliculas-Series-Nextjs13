@@ -16,7 +16,7 @@ export default function Carrusel({results}){
 
     <div className={styles['carrusel-container']}>
 
-<Carousel  interval={null} indicators={false}  prevIcon={<div style={{display:"none"}}/>}  tra >
+<Carousel  interval={4000} indicators={false} controls={false} >
      
       
      <Carousel.Item >

@@ -10,7 +10,8 @@
     
 }
 
-/* articlos */
+
+/* articulos */
 .art-movies-recent,
 .art-series-recent{
     margin-bottom:3rem;
@@ -44,3 +45,40 @@ margin-left: 0.5rem;
     z-index: 2;
     top: -0.7rem;
 }
+
+/* ------------------------------ media querys ------------------------------ */
+@media screen and (max-width:992px){
+/* articulos */
+    .art-movies-recent,
+    .art-series-recent{
+       margin-left: 3rem;
+        
+    }
+
+}
+
+
+
+@media screen and (max-width:620px){
+    /* articulo principal */
+    .art-movies-top{
+        margin-left: 1rem;         
+    }
+   
+    /* articulos */
+    .art-movies-recent,
+    .art-series-recent{
+       margin-left: 3rem;
+        
+    }
+}
+
+
+
+@media screen and (max-width:620px){
+    /* articulos */
+    .art-movies-recent,
+    .art-series-recent{
+       margin-left: 1rem;
+        
+    } }
