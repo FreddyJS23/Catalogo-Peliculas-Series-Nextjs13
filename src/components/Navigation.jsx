@@ -26,7 +26,7 @@ setVisible(false)
   return (
     <>
 
-     <SidebarResponsive children={children} visible={visible} handleClose={handleClose} />
+     <SidebarResponsive  visible={visible} handleClose={handleClose} >{children}</SidebarResponsive>
       
       <div className={styles["navigation-container"]}>
         <ul className={styles.navigation}  >
