@@ -11,7 +11,7 @@ export default function Home() {
      
       <section className={styles['section-home']}>
        
-      
+     
      <article className={styles['art-movies-top']}>
        <span className={`${styles["icono-destacadas"]} iconos`}></span>
           
@@ -30,10 +30,10 @@ export default function Home() {
       <h2>Series <span className={`${styles["icono-destacadas2"]} iconos`}></span>  </h2>
       
       <GetDataCarousel page={1}  tipo={"tvSeries"} genero={"Action"} year={"2023"} list={""} sort={"year.decr"}  />
-        </article>  
-    
+        </article>   
        
      
+      
       
       </section>
 

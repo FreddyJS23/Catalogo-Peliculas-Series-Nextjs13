@@ -35,7 +35,7 @@ setVisible(false)
             <ul className={styles["navigation-sections"]}>
              
              <li className={styles["navigation-button-navbar"]}>
-              <button onClick={handleClick}  >navbar</button>
+              <span  onClick={handleClick} className={`${styles["icono-nav"]} iconos`}></span> 
              </li>
              
               <li>

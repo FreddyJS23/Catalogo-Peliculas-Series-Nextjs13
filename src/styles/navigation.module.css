@@ -76,12 +76,17 @@ color: rgba(255, 255, 255, 0.692);
 .icono-others{
   background-image: url("../../public/svg/others.svg");
 }
+.icono-nav{
+  background-image: url("../../public/svg/nav.svg");
+  cursor: pointer;
+}
 
 
 .icono-home,
 .icono-movies,
 .icono-series,
-.icono-others{
+.icono-others,
+.icono-nav{
   width: 1.875rem;
   height: 1.875rem;
 }
@@ -151,7 +156,8 @@ color: rgba(255, 255, 255, 0.692);
 .icono-home,
 .icono-movies,
 .icono-series,
-.icono-others{
+.icono-others,
+.icono-nav{
   width: 1.575rem;
 }
 /* enlaces */
@@ -193,7 +199,8 @@ display: none;
   .icono-home,
   .icono-movies,
   .icono-series,
-  .icono-others{
+  .icono-others,
+  .icono-nav{
     width: 2.1rem;
     height: 2.1rem;
   }
