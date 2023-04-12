@@ -84,8 +84,152 @@ width: 100%;
     font-size: 1.2rem;
 }
 
+
+
+/* ------------------------------- media querys ------------------------------ */
+@media screen and (max-width:1266px){
+    /* container principal */
+    .carruselPrincipal-container{
+    width: 96%;
+    }
+
+}
+
+
+@media screen and (max-width:1161px){
+   /* container principal */
+    .carruselPrincipal-container{
+    width: 96%;
+    }
+/* container de cada item de carrusel */
+    .cp-item{
+      
+        padding-right: .3rem;
+        
+    }
+/* container informacion */
+    .cp-item-informacion{
+        
+        padding: 0rem .7rem;
+       gap: .4rem;
+        
+    }
+    /* container titulo letra*/
+
+    .cp-item-informacion-titulo p{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+     /* container informacion data letra*/
+    .cp-item-informacion-data p {
+        font-size: .7rem;
+        font-weight: 700;
+    }
+ /* container informacion descripcion letra*/
+    .cp-item-informacion-descripcion p{
+        font-size: 1rem;
+    }
+    
+
+}   
+
+
+
+@media screen and (max-width:972px){
+/* container img */
+    .cp-item-image,.cp-image-img{
+        width: 13rem;
+        height: 18rem;
+      
+        
+    }
+  
+}
+
+
+
+
+
+@media screen and (max-width:620px){
+    /* container de cada item de carrusel */
+    .cp-item{
+        display: flex;
+        padding: 0rem 0rem;
+        
+    }
+  /* container img */
+    .cp-item-image,.cp-image-img{
+        width: 14rem;
+        height:23rem;
+        
+    }
+    /* container informacion */
+    .cp-item-informacion{
+      margin-top: 1rem ;
+        
+    }
+    
+}
+
+
+
+@media screen and (max-width:480px){
+ 
+    /*  letras informacion*/
+    .cp-item-informacion-titulo p{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .cp-item-informacion-data p {
+        font-size: .5rem;
+        font-weight: 700;
+    }
+
+    .cp-item-informacion-descripcion p{
+        font-size: .8rem;
+    }
+    .cp-item-informacion-titulo,.cp-item-informacion-data,.cp-item-informacion-descripcion{
+        padding-left: .1rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:420px){
+    .cp-item-informacion-descripcion{
+        display: none;
+    }
+   
+}
+
+
+
+@media screen and (max-width:360px){
+     /* container de cada item de carrusel */
+    .cp-item{
+        justify-content: center;
+        padding: 1rem 0rem;
+        margin-left: 1rem;
+    }
+    /* container img */
+    .cp-item-image,.cp-image-img{
+        width: 14rem;
+        height:19.7rem;
+      
+        
+    }
+     
+    /* container informacion */
+    .cp-item-informacion{
+        display: none;
+    }
+  
+}
+
+
 /* -------------------------------- carrusel -------------------------------- */
-/* contenedor dle carrusel */
+/* contenedor del carrusel */
 .carrusel-container{
     width: 100%;
     height: 23rem;
@@ -106,4 +250,39 @@ width: 100%;
     height: 20rem;
     border-radius: 10px;
     
+}
+
+/* ------------------------------ media querys ------------------------------ */
+
+@media screen and (max-width:1266px){
+   
+   /* contenedor del carrusel */   /* items del carrusel, 5 item por slice */
+    .carrusel-container,.carrusel-item{
+        height: 44rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:620px){
+      /* contenedor del carrusel */   /* items del carrusel, 5 item por slice */
+    .carrusel-item-container,.carrusel-item-img{
+        width: 8rem;
+        height: 15rem;
+       
+        
+    }
+   
+}
+
+
+
+
+
+@media screen and (max-width:480px){
+   /* contenedor del carrusel */   /* items del carrusel, 5 item por slice */
+    .carrusel-container,.carrusel-item{
+        height: 48rem;
+}
 }

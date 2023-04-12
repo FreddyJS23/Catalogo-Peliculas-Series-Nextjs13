@@ -7,9 +7,8 @@ position: fixed;
 top: 0;
 z-index: 1;
 overflow: hidden;
-
-
 }
+
 /* contenedor logo */
 .container-logo{
     margin-left: 2.7rem;
@@ -66,17 +65,13 @@ overflow: hidden;
  }
  
  
-
 /* contenedor de elementos */
-
-
 .sidebar-elements > ul{
    margin-top:2rem;
    padding: 0;
    margin-left: .7rem;
   
 }
-
 
 
 /* iconos */
@@ -91,7 +86,6 @@ overflow: hidden;
     background-image: url("../../public/svg/category.svg");
 }
 
-
 .icono-about,
 .icono-search,
 .icono-category{
@@ -100,7 +94,6 @@ overflow: hidden;
     margin-left: .5rem;
    
 }
-
 
 /*contenedor de enlaces */
 .sidebar-link,
@@ -140,16 +133,23 @@ transition: .5s all;
 color: rgba(255, 255, 255, 0.692);
 }
 
+/* barra de busqueda */
+.sidebar-link input{
+    width: 60%;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
 
-/* generos */
+
+/* contenedor li generos */
 .container-generos{
  list-style: none;
  display: flex;
- flex-direction: column;
-
- 
+ flex-direction: column; 
 }
 
+/* contenedor boton desplegar */
 .genero-button{
     margin-bottom: .5rem;
     cursor: pointer;
@@ -158,21 +158,67 @@ color: rgba(255, 255, 255, 0.692);
 
 }
 
+/* contenedor lista generos */
 .listGenero{
     list-style: none;
     overflow-y: auto;
     height: 20rem;
 }
-
+/* item genero individual */
 .genero{
     margin-bottom: .5rem;
 }
 
 
-/* barra de busqueda */
-.sidebar-link input{
-    width: 60%;
-    border-radius: 5px;
-    text-decoration: none;
-    border: none;
+
+/* ------------------------------ media querys ------------------------------ */
+
+@media screen and (max-width:900px) {
+   /* contenedor canva */
+    .container-offcanvas{
+        width: 16rem;
+    }
+   
+    /* contenedor principal */
+    .container-sidebar{
+      display:none     
+}
+/* contendor sidebar responsive */
+.sidebar-responsive{
+    display: block;
+    left: 0;
+    
+}
+/* container encabezado  */
+.offcanvas-header{
+   display: flex;
+    z-index: 2;
+  justify-content: flex-end;
+    
+}
+/* logo */
+.icono-logo{
+    width:7rem
+}
+
+/* iconos */
+.icono-about,
+.icono-search,
+.icono-category{
+    width: 1.475rem;
+    height: 1.475rem;
+    margin-left: .5rem;
+}
+
+/*contenedor de enlaces */
+.sidebar-link,
+.container-generos{
+ 
+   margin-bottom: 1.7rem;
+ padding: .7rem 0;
+    gap: .4rem;
+
+ 
+}
+
 }

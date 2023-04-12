@@ -4,7 +4,7 @@ import "../styles/globals.css";
 
 import Navigation from "@/components/Navigation";
 import Sidebar from "@/components/Sidebar";
-
+import GetDataGenero from '../components/GetDataGenero'
 
 export const metadata = {
   title: "Peliculas & Series By FreddyJS",
@@ -24,8 +24,13 @@ export default function RootLayout({ children }) {
         <header>
           <nav style={{marginTop:"3rem"}}>
         
-      <Navigation />
-     <Sidebar /> 
+      {/*   componente de servidor en componente cliente, se pasa como children el componente servidor */}
+      <Navigation>
+        <GetDataGenero/>
+      </Navigation>
+   
+   
+   <Sidebar visible={true}/>  
 
  </nav>
         </header>

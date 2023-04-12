@@ -32,6 +32,15 @@ main{
 }
 
 
+/* ------------------------------- media query ------------------------------ */
+@media screen and (max-width:900px) {
+
+  main{
+    margin-left:0;
+  }
+}
+
+
 
 
 
